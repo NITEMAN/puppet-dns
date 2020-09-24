@@ -30,7 +30,7 @@ define dns::record::record_base (
     target  => $zone_file_stage,
     order   => $order,
     content => template("${module_name}/zone_record.erb"),
-    require => Class['dns']
+    #require => Class['dns']
   }
 
 }
